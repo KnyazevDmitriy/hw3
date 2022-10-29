@@ -15,7 +15,12 @@ const transformString = (str) => {
 const findMaxNumber = (array) => {
   if (array.length === 0) {
     return NaN
-  } else return Math.max.apply(null, array)
+  } else return array.reduce((a, b) => a > b ? a : b);
+
+    // if (array.length === 0) {
+    //   return NaN
+    // } else return Math.max.apply(null, array)
+    
 };
 
 
